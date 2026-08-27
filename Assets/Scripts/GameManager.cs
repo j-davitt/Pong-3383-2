@@ -5,6 +5,13 @@ public class GameManager : MonoBehaviour
     public int scoreP1, scoreP2;
     public ScoreText scoreTextLeft, scoreTextRight;
 
+    void Update()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+    }
     public void OnScoreZoneReached(int id)
     {
         if(id == 1)
