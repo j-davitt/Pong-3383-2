@@ -16,7 +16,6 @@ public class Ball : MonoBehaviour
         InitialPush();
     }
 
-    // Update is called once per frame
     void InitialPush()
     {
         Vector2 dir = Random.value < 0.5f ? Vector2.left : Vector2.right;
